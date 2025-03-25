@@ -5,7 +5,6 @@
  */
 package clothingstore.controller.web;
 
-import clothingstore.utils.WishlistUtil;
 import clothingstore.utils.CartUtil;
 import clothingstore.dao.CategoryDAO;
 import clothingstore.dao.ProductDAO;
@@ -115,36 +114,6 @@ public class DispatchServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        CartUtil cartUtil = new CartUtil();
-
-        WishlistUtil wishlistUtil = new WishlistUtil();
-        try {
-            List<CartItem> carts = null;
-            List<ProductDTO> wishlists = null;
-
-            HttpSession session = request.getSession();
-            if (session.getAttribute("CART") == null) {
-                Cookie cookie = cartUtil.getCookieByName(request, "Cart");
-                if (cookie != null) {
-                    carts = cartUtil.getCartFromCookie(cookie);
-                }
-            } else {
-                carts = (List<CartItem>) session.getAttribute("CART");
-            }
-            if(session.getAttribute("WISHLIST") == null) {
-                Cookie cookie = wishlistUtil.getCookieByName(request, "Wishlist");
-                if(cookie != null) {
-                    wishlists = wishlistUtil.getWishlistFromCookie(cookie);
-                }
-            }else {
-                wishlists = (List<ProductDTO>)session.getAttribute("WISHLIST");
-            }
-            session.setAttribute("CART", carts);
-            session.setAttribute("WISHLIST", wishlists);
-
-        } catch (Exception e) {
-            log("Error in doGet DispatchServlet: " + e.getMessage());
-        }
         processRequest(request, response);
     }
 

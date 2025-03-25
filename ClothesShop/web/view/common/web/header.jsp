@@ -27,7 +27,7 @@
                 <div class="header_links">
                     <ul>
                         <li><a href="ContactServlet" title="Contact">Contact</a></li>
-                        <li><a href="WishlistServlet" title="wishlist">My wishlist</a></li>
+                        
                         <li><a href="CartServlet" title="My cart">My cart</a></li>  
                             <c:if test="${sessionScope.account != null}">
                             <li><a href="ProfileServlet" title="My account">My account</a></li>

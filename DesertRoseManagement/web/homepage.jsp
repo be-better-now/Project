@@ -1,106 +1,97 @@
+<%-- 
+    Document   : homepage
+    Created on : Mar 24, 2025
+    Author     : tungi
+--%>
+<%@page import="dto.FlowerDTO"%>
+<%@page import="java.util.List"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desert Rose Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .title {
-            text-align: center;
-            background-color: #008000;
-            color: white;
-            padding: 10px;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .product-card {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .product-card:hover {
-            transform: scale(1.05);
-        }
-        .product-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .discount {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: green;
-            color: white;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        .product-title {
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .price {
-            text-align: center;
-            font-size: 16px;
-            color: red;
-        }
-        .old-price {
-            text-decoration: line-through;
-            color: gray;
-        }
-    </style>
+    <title>Danh mục Hoa - Desert Rose Shop</title>
+    <link rel="stylesheet" href="css/homepage.css">
 </head>
 <body>
-    <div class="container">
-        <div class="title">B� HOA ??P SINH NH?T</div>
-        <div class="row">
-            <div class="col-md-3 mb-4">
-                <div class="product-card position-relative">
-                    <span class="discount">-11%</span>
-                    <img src="hoa1.jpg" alt="Hoa 1">
-                    <p class="product-title">Hoa B� Sinh Nh?t Amethyst Aura</p>
-                    <p class="price"><span class="old-price">950,000?</span> 850,000?</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="product-card position-relative">
-                    <span class="discount">-14%</span>
-                    <img src="hoa2.jpg" alt="Hoa 2">
-                    <p class="product-title">B� Hoa H?ng Love Daily Rose</p>
-                    <p class="price"><span class="old-price">350,000?</span> 300,000?</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="product-card position-relative">
-                    <span class="discount">-18%</span>
-                    <img src="hoa3.jpg" alt="Hoa 3">
-                    <p class="product-title">Hydrangea Muse Bouquet</p>
-                    <p class="price"><span class="old-price">550,000?</span> 450,000?</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="product-card position-relative">
-                    <span class="discount">-27%</span>
-                    <img src="hoa4.jpg" alt="Hoa 4">
-                    <p class="product-title">Sweet Baby</p>
-                    <p class="price"><span class="old-price">480,000?</span> 350,000?</p>
-                </div>
+    <jsp:include page="header.jsp"/>
+    
+    <div class="page-content">
+        <div class="catalog-header">
+            <h1>Danh mục hoa</h1>
+            <div class="search-container">
+                <form action="MainController" method="GET">
+                    <input type="hidden" name="action" value="home">
+                    <%
+                        String searchTerm = request.getParameter("searchTerm");
+                        if (searchTerm == null) searchTerm = "";
+                    %>
+                    <input type="text" name="searchTerm" placeholder="Tìm kiếm theo tên hoa..." value="<%=searchTerm%>">
+                    <button type="submit" class="search-button">Tìm kiếm</button>
+                </form>
             </div>
         </div>
+        
+        <%
+            String message = (String) request.getAttribute("message");
+            if (message != null) {
+        %>
+            <div class="message-container success">
+                <p><%=message%></p>
+            </div>
+        <% } %>
+        
+        <div class="flowers-container">
+            <%
+                List<FlowerDTO> flowers = (List<FlowerDTO>) request.getAttribute("flowers");
+                if (flowers == null || flowers.isEmpty()) {
+            %>
+                <div class="no-results">
+                    <p>Không tìm thấy hoa nào. Vui lòng thử tìm kiếm khác hoặc quay lại sau.</p>
+                </div>
+            <% } else { %>
+                <div class="flower-grid">
+                    <% for (FlowerDTO flower : flowers) { 
+                        if (searchTerm.isEmpty() || flower.getFlowerName().toLowerCase().contains(searchTerm.toLowerCase())) {
+                    %>
+                        <div class="flower-card">
+                            <div class="flower-cover">
+                                <div class="no-image">
+                                    <span>Chưa có hình ảnh</span>
+                                </div>
+                            </div>
+                            <div class="flower-info">
+                                <h3 class="flower-title">
+                                    <a href="MainController?action=viewDetail&flowerID=<%=flower.getFlowerID()%>">
+                                        <%=flower.getFlowerName()%>
+                                    </a>
+                                </h3>
+                                <p class="flower-quality">Chất lượng: <%=flower.getQuality()%></p>
+                                <p class="flower-category">Danh mục: <%=flower.getCategory()%></p>
+                                <div class="flower-price-container">
+                                    <span class="flower-price"><%=String.format("%,.0f", flower.getPrice())%> VNĐ</span>
+                                    <% if (flower.getQuantity() > 0) { %>
+                                        <span class="stock in-stock"><%=flower.getQuantity()%> bó còn lại</span>
+                                    <% } else { %>
+                                        <span class="stock out-of-stock">Hết hàng</span>
+                                    <% } %>
+                                </div>
+                                <% if (flower.getQuantity() > 0) { %>
+                                    <form action="MainController" method="post" class="add-to-cart-form">
+                                        <input type="hidden" name="action" value="addToCart">
+                                        <input type="hidden" name="flowerID" value="<%=flower.getFlowerID()%>">
+                                        <button type="submit" class="add-to-cart-btn">Thêm vào Giỏ</button>
+                                    </form>
+                                <% } %>
+                            </div>
+                        </div>
+                    <% } } %>
+                </div>
+            <% } %>
+        </div>
     </div>
+    
+    <jsp:include page="footer.jsp"/>
 </body>
 </html>

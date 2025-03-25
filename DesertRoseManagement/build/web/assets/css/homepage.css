@@ -1,0 +1,137 @@
+.page-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 1rem;
+}
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.catalog-header h1 {
+    color: #008000;
+}
+.search-container form {
+    display: flex;
+    gap: 10px;
+}
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+}
+.search-button {
+    background: #009879;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background: #00806a;
+}
+.message-container {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.message-container.success {
+    background: #d4edda;
+    color: #155724;
+}
+.flowers-container {
+    margin-top: 20px;
+}
+.no-results {
+    text-align: center;
+    color: #555;
+}
+.flower-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.flower-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.flower-card:hover {
+    transform: translateY(-5px);
+}
+.flower-cover .no-image {
+    width: 100%;
+    height: 200px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+}
+.flower-info {
+    padding: 15px;
+}
+.flower-title a {
+    color: #008000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.flower-quality, .flower-category {
+    color: #555;
+    margin: 5px 0;
+}
+.flower-price-container {
+    margin: 10px 0;
+}
+.flower-price {
+    font-size: 1.3rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+.stock {
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.in-stock {
+    background: #d4edda;
+    color: #155724;
+}
+.out-of-stock {
+    background: #f8d7da;
+    color: #721c24;
+}
+.add-to-cart-form {
+    margin-top: 10px;
+}
+.add-to-cart-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+.add-to-cart-btn:hover {
+    background: #45a049;
+}
+@media screen and (max-width: 600px) {
+    .flower-card {
+        width: 100%;
+    }
+    .catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .search-container input[type="text"] {
+        width: 100%;
+    }
+}
