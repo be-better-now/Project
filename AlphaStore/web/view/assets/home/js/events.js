@@ -241,7 +241,7 @@ function subscribeEmailAtHome(action) {
     var email = document.getElementById('email-input-at-home').value;
     var action = action;
     $.ajax({
-        url: "/PRJ301_Sp24_ClothesShop/EmailServlet",
+        url: "/TheAlphaStore/EmailServlet",
         type: "get",
         data: {
             email: email,

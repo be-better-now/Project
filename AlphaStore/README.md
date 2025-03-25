@@ -145,16 +145,8 @@
 - httpclient-4.5.5
 - httpcore-4.9.9
 
-## Contributors 😎
-
-<a href="https://contrib.rocks/image?repo=huyhoang-doit/ClothesShop/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=huyhoang-doit/ClothesShop"/>
-</a>
-
----
 
 <!-- ## Reference
-
 ## License & Copyright
 
 &copy; 2024 Phung Huu Thanh Licensed under the [Apache License 2.0](https://github.com/phuuthanh2003/PerfumeShop/blob/main/LICENSE). -->
