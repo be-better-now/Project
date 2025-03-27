@@ -106,7 +106,7 @@
 - Java JDK 8
 - Apache Tomcat 8
 - Visual Studio Code
-- Microsoft SQL Server Management Studio 19
+- Microsoft SQL Server Management Studio 18
 
 **6.Libraries**
 
