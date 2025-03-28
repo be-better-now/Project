@@ -28,7 +28,7 @@ import org.apache.http.client.fluent.Form;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 @WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {

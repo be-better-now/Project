@@ -20,7 +20,7 @@ import clothingstore.model.ProductDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "FilterServlet", urlPatterns = {"/FilterServlet"})
 public class FilterServlet extends HttpServlet {

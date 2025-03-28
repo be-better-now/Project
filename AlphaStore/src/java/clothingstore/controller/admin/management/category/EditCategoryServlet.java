@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Administrator
+ * @author huuduy
  */
 @WebServlet(name = "EditCategoryServlet", urlPatterns = {"/EditCategoryServlet"})
 public class EditCategoryServlet extends HttpServlet {

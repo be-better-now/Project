@@ -18,7 +18,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class ProfileServlet extends HttpServlet {
 

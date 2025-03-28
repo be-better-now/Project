@@ -7,7 +7,7 @@ package clothingstore.model;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class UserDTO {
     private int id;

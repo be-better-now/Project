@@ -1,7 +1,7 @@
 <%-- 
     Document   : chart
     Created on : Feb 22, 2024, 4:45:02 PM
-    Author     : HuuThanh
+    Author     : huuduy
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -90,15 +90,15 @@
                 responsive: true
             }
         });
-        // Salse & Revenue Chart
+        // Sale & Revenue Chart
         var ctx2 = document.getElementById("sale-revenue").getContext("2d");
         var myChart2 = new Chart(ctx2, {
             type: "line",
             data: {
-                labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024"],
+                labels: ["2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025"],
                 datasets: [{
                         label: "Revenue",
-                        data: [${YEAR18}, ${YEAR19}, ${YEAR20}, ${YEAR21}, ${YEAR22}, ${YEAR23}, ${YEAR24}],
+                        data: [${YEAR18}, ${YEAR19}, ${YEAR20}, ${YEAR21}, ${YEAR22}, ${YEAR23}, ${YEAR24}, ${YEAR25}],
                         backgroundColor: "rgba(0, 156, 255, .5)",
                         fill: true
                     }

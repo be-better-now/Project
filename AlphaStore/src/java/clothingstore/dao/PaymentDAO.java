@@ -16,7 +16,7 @@ import clothingstore.model.PaymentDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 public class PaymentDAO extends DBContext {
 

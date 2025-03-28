@@ -19,7 +19,7 @@ import clothingstore.model.ProductDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 @WebServlet(name = "ManageProductServlet", urlPatterns = {"/ManageProductServlet"})
 public class ManageProductServlet extends HttpServlet {

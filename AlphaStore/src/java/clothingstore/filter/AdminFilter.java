@@ -21,7 +21,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author Admin
+ * @author huuduy
  */
 public class AdminFilter implements Filter {
 

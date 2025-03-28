@@ -17,7 +17,7 @@ import clothingstore.model.SupplierDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 @WebServlet(name = "ManageSupplierServlet", urlPatterns = {"/ManageSupplierServlet"})
 public class ManageSupplierServlet extends HttpServlet {

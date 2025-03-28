@@ -10,7 +10,7 @@ import java.text.DecimalFormat;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class ProductDTO {
 

@@ -7,7 +7,7 @@ package clothingstore.model;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 public class OrderItem {
     private int quantity;

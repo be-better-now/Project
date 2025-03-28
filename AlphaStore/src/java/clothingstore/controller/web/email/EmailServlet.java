@@ -16,7 +16,7 @@ import clothingstore.model.Email;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "EmailServlet", urlPatterns = {"/EmailServlet"})
 public class EmailServlet extends HttpServlet {

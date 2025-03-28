@@ -22,7 +22,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 @WebServlet(name = "ManageCategoryServlet", urlPatterns = {"/ManageCategoryServlet"})
 public class ManageCategoryServlet extends HttpServlet {

@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(urlPatterns = {"/ContactServlet"})
 public class ContactServlet extends HttpServlet {

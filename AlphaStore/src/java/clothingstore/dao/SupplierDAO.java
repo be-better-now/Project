@@ -16,7 +16,7 @@ import clothingstore.model.SupplierDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class SupplierDAO extends DBContext {
     private static final String GETDATA = "SELECT * FROM Suppliers";

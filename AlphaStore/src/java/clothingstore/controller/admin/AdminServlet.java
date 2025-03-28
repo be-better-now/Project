@@ -21,7 +21,7 @@ import clothingstore.model.OrderItem;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class AdminServlet extends HttpServlet {
 

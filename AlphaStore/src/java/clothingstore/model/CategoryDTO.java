@@ -7,7 +7,7 @@ package clothingstore.model;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class CategoryDTO {
     private int id;

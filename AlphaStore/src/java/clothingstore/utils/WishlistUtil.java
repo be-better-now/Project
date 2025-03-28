@@ -16,7 +16,7 @@ import clothingstore.model.ProductDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 public class WishlistUtil {
 

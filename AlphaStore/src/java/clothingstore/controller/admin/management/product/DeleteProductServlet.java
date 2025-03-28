@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Administrator
+ * @author huuduy
  */
 @WebServlet(name = "DeleteProductServlet", urlPatterns = {"/DeleteProductServlet"})
 public class DeleteProductServlet extends HttpServlet {

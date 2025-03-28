@@ -22,7 +22,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class ProductDAO extends DBContext {
 

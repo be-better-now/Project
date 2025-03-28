@@ -19,7 +19,7 @@ import clothingstore.model.ProductDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class ShopServlet extends HttpServlet {
 

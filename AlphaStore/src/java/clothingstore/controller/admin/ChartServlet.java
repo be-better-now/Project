@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 @WebServlet(name = "ChartServlet", urlPatterns = {"/ChartServlet"})
 public class ChartServlet extends HttpServlet {
@@ -41,6 +41,7 @@ public class ChartServlet extends HttpServlet {
             double year2022 = oDao.getTotalMoneyByYear(2022);
             double year2023 = oDao.getTotalMoneyByYear(2023);
             double year2024 = oDao.getTotalMoneyByYear(2024);
+            double year2025 = oDao.getTotalMoneyByYear(2025);
             
             double month1 = oDao.getTotalMoneyByMonth(1);
             double month2 = oDao.getTotalMoneyByMonth(2);
@@ -62,6 +63,7 @@ public class ChartServlet extends HttpServlet {
             request.setAttribute("YEAR22", year2022);
             request.setAttribute("YEAR23", year2023);
             request.setAttribute("YEAR24", year2024);
+            request.setAttribute("YEAR25", year2025);
             
             request.setAttribute("MONTH1", month1);
             request.setAttribute("MONTH2", month2);

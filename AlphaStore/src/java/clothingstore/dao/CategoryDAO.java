@@ -17,7 +17,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class CategoryDAO extends DBContext {
 

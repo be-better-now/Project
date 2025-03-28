@@ -21,7 +21,7 @@ import clothingstore.model.ProductDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "WishlistServlet", urlPatterns = {"/WishlistServlet"})
 public class WishlistServlet extends HttpServlet {

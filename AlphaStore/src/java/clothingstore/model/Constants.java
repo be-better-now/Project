@@ -7,7 +7,7 @@ package clothingstore.model;
  */
 
 /**
- * @author heaty566
+ * @author huuduy
  */
 public class Constants {
 

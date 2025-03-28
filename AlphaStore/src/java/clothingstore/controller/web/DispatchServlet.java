@@ -27,7 +27,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 public class DispatchServlet extends HttpServlet {
 

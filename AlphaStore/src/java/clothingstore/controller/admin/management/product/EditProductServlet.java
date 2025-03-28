@@ -26,7 +26,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 @WebServlet(name = "EditProductServlet", urlPatterns = {"/EditProductServlet"})
 public class EditProductServlet extends HttpServlet {

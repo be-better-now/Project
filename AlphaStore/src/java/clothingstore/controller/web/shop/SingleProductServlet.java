@@ -18,7 +18,7 @@ import clothingstore.model.ProductDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "SingleProductServlet", urlPatterns = {"/SingleProductServlet"})
 public class SingleProductServlet extends HttpServlet {

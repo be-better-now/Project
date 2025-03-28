@@ -7,7 +7,7 @@ package clothingstore.model;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 public class WalletDTO {
     private int walletID;

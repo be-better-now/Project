@@ -22,7 +22,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author Administrator
+ * @author huuduy
  */
 @WebServlet(name = "InsertProductServlet", urlPatterns = {"/InsertProductServlet"})
 public class InsertProductServlet extends HttpServlet {

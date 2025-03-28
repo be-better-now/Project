@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Administrator
+ * @author huuduy
  */
 @WebFilter(filterName = "HomeFilter", urlPatterns = {"/*"})
 public class HomeFilter implements Filter {

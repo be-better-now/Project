@@ -1,7 +1,7 @@
 <%-- 
     Document   : admin_categories
     Created on : Feb 20, 2024, 12:27:23 AM
-    Author     : HuuThanh
+    Author     : huuduy
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

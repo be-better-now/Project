@@ -16,7 +16,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class EditProfileServlet extends HttpServlet {
 

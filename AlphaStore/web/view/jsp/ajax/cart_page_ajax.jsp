@@ -1,7 +1,7 @@
 <%-- 
     Document   : cart_page
     Created on : Mar 14, 2024, 9:38:54 AM
-    Author     : lvhho
+    Author     : huuduy
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

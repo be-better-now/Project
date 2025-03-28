@@ -19,7 +19,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class OrderDAO extends DBContext {
 

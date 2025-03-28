@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Administrator
+ * @author huuduy
  */
 @WebServlet(name = "ErrorServlet", urlPatterns = {"/ErrorServlet"})
 public class ErrorServlet extends HttpServlet {

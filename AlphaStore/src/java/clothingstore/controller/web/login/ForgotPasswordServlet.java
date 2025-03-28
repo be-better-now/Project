@@ -19,7 +19,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "ForgotPasswordServlet", urlPatterns = {"/ForgotPasswordServlet"})
 public class ForgotPasswordServlet extends HttpServlet {

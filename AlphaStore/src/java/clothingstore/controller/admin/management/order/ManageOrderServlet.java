@@ -19,7 +19,7 @@ import clothingstore.model.OrderItem;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "ManageOrderServlet", urlPatterns = {"/ManageOrderServlet"})
 public class ManageOrderServlet extends HttpServlet {

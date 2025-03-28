@@ -16,7 +16,7 @@ import clothingstore.model.TypeDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class TypeDAO extends DBContext {
     private static final String GET_TYPE_BY_ID = "SELECT * FROM Types WHERE id = ?";

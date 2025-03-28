@@ -1,7 +1,7 @@
 <%-- 
     Document   : sortproducts
     Created on : Feb 27, 2024, 3:17:40 PM
-    Author     : HuuThanh
+    Author     : huuduy
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

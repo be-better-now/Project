@@ -29,7 +29,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author lvhho
+ * @author huuduy
  */
 @WebServlet(name = "CheckoutServlet", urlPatterns = {"/CheckoutServlet"})
 public class CheckoutServlet extends HttpServlet {

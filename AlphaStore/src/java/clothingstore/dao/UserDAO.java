@@ -16,7 +16,7 @@ import clothingstore.model.UserDTO;
 
 /**
  *
- * @author HuuThanh
+ * @author huuduy
  */
 public class UserDAO extends DBContext {
 
@@ -402,7 +402,7 @@ public class UserDAO extends DBContext {
 
     public static void main(String[] args) throws SQLException {
         UserDAO dao = new UserDAO();
-        UserDTO user = dao.checkLogin("phuuthanh2003", "1231231231");
+        UserDTO user = dao.checkLogin("huuduy2004", "12345");
 //        List<UserDTO> list = dao.getData();
 //        for (int i = 0; i < list.size(); i++) {
 //            System.out.println(list.get(i).getAvatar());
