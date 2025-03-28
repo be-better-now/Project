@@ -30,7 +30,7 @@ public class DBContext {
 
         //2. Create Connection String
         String url = "jdbc:sqlserver://localhost:1433;"
-                + "databaseName=ClothesShop";
+                + "databaseName=AlphaStore";
         //3. Open connection
         Connection con = DriverManager.getConnection(url, "sa", "12345");
         return con;

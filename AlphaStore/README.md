@@ -1,4 +1,4 @@
-# 💵 Alpha Store - Assigment PRJ301 - JAVA WEB APPLICATION DEVELOPMENT
+# Alpha Store - Assigment PRJ301 - JAVA WEB APPLICATION DEVELOPMENT
 
 ## You will find in this repo the following stuff:
 

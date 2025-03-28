@@ -11,9 +11,9 @@ package clothingstore.model;
  */
 public class Constants {
 
-	public static String GOOGLE_CLIENT_ID = "40613383185-c4qs0q74c4g95fg8l8lr34q9765bpaet.apps.googleusercontent.com";
+	public static String GOOGLE_CLIENT_ID = "xxx";
 
-	public static String GOOGLE_CLIENT_SECRET = "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";
+	public static String GOOGLE_CLIENT_SECRET = "yyy";
 
 	public static String GOOGLE_REDIRECT_URI = "http://localhost:8080/TheAlphaStore/LoginServlet";
 

@@ -1,6 +1,6 @@
-﻿﻿CREATE DATABASE ClothesShop
+﻿﻿CREATE DATABASE AlphaStore
 
-USE ClothesShop
+USE AlphaStore
 
 DROP TABLE OrderItem
 DROP TABLE Orders
